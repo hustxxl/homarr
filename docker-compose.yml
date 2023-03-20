@@ -8,11 +8,11 @@ services:
     image: ghcr.io/ajnart/homarr:latest
     restart: unless-stopped
     volumes:
-      - configs:/app/data/configs
-      - icons:/app/public/icons
+      - configs-homarr:/app/data/configs
+      - icons-homarr:/app/public/icons
     ports:
       - '7575:7575'
 
 volumes:
-  configs:
-  iconfs:
+  configs-homarr:
+  iconfs-homarr:
